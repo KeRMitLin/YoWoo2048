@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical"
+            android:background="@color/bgScore"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:textColor="@color/bgRestartText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bgRestartText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical"
+            android:background="@color/bgScore"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bestscore"
+                android:textColor="@color/bgRestartText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvBestScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bgRestartText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical"
+            android:background="@color/bgRestart"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/btnNewGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newgame"
+                android:textColor="@color/bgRestartText"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.kermitlin.yowoo2048.GameView
+            android:id="@+id/gameView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/background">
+        </com.kermitlin.yowoo2048.GameView>
+
+        <com.kermitlin.yowoo2048.AnimLayer
+            android:id="@+id/animLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.kermitlin.yowoo2048.AnimLayer>
+    </FrameLayout>
+
+</LinearLayout>

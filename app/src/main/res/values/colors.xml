@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6FB7B7</color>
+    <color name="colorPrimaryDark">#408080</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="background">#ECFFFF</color>
+    <color name="bgScore">#C48888</color>
+    <color name="bgRestart">#984B4B</color>
+    <color name="bgRestartText">#FFFFFF</color>
+    <color name="cardBackground">#E0E0E0</color>
+    <color name="menuText">#000000</color>
+    <color name="bgColorLabel0">#00000000</color>
+    <color name="bgcolorLabel2">#FFDCB9</color>
+    <color name="bgcolorLabel4">#FFD1A4</color>
+    <color name="bgcolorLabel8">#FFC78E</color>
+    <color name="bgcolorLabel16">#FFBB77</color>
+    <color name="bgcolorLabel32">#FFAF60</color>
+    <color name="bgcolorLabel64">#FFA042</color>
+    <color name="bgcolorLabel128">#FF9224</color>
+    <color name="bgcolorLabel256">#FF8000</color>
+    <color name="bgcolorLabel512">#EA7500</color>
+    <color name="bgcolorLabel1024">#D26900</color>
+    <color name="bgcolorLabel2048">#BB5E00</color>
+    <color name="bgcolorLabelDefault">#9F5000</color>
+</resources>
